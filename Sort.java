@@ -11,7 +11,6 @@ class Sort
 					arr[j] = arr[j+1];
 					arr[j+1] = temp;
 				}
-		printArray(arr);		
 	}
 
 	void printArray(int arr[])
@@ -27,8 +26,8 @@ class Sort
 		Sort ob = new Sort();
 		System.out.println("\t\tBUBBLE SORTING");
 		int arr[] = {64, 34, 25, 12, 22, 11, 90};
-		System.out.println("Sorted array");
 		ob.bubbleSort(arr);
-		//ob.printArray(arr);
+		System.out.println("Sorted array");
+		ob.printArray(arr);
 	}
 }

@@ -1,23 +1,25 @@
-import java.io.*;
 import java.util.*;
-class Student
+class Student 
 {
-public static void main(String arg[])
-{
- Scanner sc = new Scanner(System.in);
- int role_no=1201;
-
-
-
- System.out.println("Enter your role number");
- int rnum = sc.nextInt();
- if(rnum==role_no)
- {
-	 System.out.println("Your mark: eng-180,tam-180,mat-190");
- }
- else
- {
-	 System.out.println("Enter your role number correctly....");
- }
-}
+	public static void main(String args[])
+	{
+		Scanner s = new Scanner(System.in);
+		int i,n;
+		int a[] = new int[10];
+		double av,sum=0;
+		System.out.println("Enter number of students");
+		n=s.nextInt();
+		System.out.println("Enter grade of each student");
+		for(i=0;i<n;i++)
+		{
+			a[i]=s.nextInt();
+		}
+		for(i=0;i<n;i++)
+		{
+			sum+=a[i];
+		}
+		av = sum/n;
+		System.out.println("Average = "+av);
+	}
+	
 }
